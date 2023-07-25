@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(45deg, #000000, #001433);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.imagens div{
+    padding: 20px;
+}
+
+.imagens img{
+    width: 200px;
+    cursor: pointer;
+}
+
+.imagens p{
+    color: grey;
+    padding: 10px;
+}
+ 
+img:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+.usuario{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.botao{
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-perfis{
+    width: 100%;
+    padding: 16px 10px;
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgb(212, 210, 210);
+    background: #0077ff;
+    cursor: pointer; 
+    box-shadow: 0px 10px 40px -12px #0368ff52;
+}
+
+@media only screen and (max-width: 740px){
+    .texto{
+        font-size: 20px;
+    }
+    .imagens img{
+        width: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .texto{
+        margin: 15px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .imagens img{
+        width: 80px;
+    }
+
+    .imagens div{
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .imagens{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao{
+        padding: 2px;
+
+    }
+
+}
